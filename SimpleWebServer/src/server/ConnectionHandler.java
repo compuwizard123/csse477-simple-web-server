@@ -25,7 +25,6 @@ import java.io.File;
 import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
-import java.util.Map;
 
 import protocol.HttpRequest;
 import protocol.HttpResponse;
