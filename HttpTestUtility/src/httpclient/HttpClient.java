@@ -406,8 +406,10 @@ public class HttpClient extends javax.swing.JFrame {
 
     private void butDisconnetActionPerformed(java.awt.event.ActionEvent evt) {
         try {
-            this.socket.close();
-            this.socket = null;
+        	if(this.socket != null) { 
+        		this.socket.close();
+        		this.socket = null;
+        	}
         }
         catch(Exception e) {
             this.txtResponse.append(e.toString() + "\n");
@@ -472,7 +474,7 @@ public class HttpClient extends javax.swing.JFrame {
                 BufferedReader reader = new BufferedReader(inStream);
                 
                 // Loop until we can receive response
-                while(socket.isConnected()) {
+                while(socket != null && socket.isConnected()) {
                     if(socket.isConnected() && reader.ready()) {
                         String line = reader.readLine();
                         txtResponse.append(line + "\n");
