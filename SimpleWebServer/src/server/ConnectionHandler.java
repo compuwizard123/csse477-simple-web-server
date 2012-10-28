@@ -193,7 +193,7 @@ public class ConnectionHandler implements Runnable {
 							if(date != null){
 								long datetime = file.lastModified();
 				                Date modified_date = new Date(datetime);
-				                SimpleDateFormat df = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss zzz");
+				                SimpleDateFormat df = new SimpleDateFormat("eee, dd mmm yyyy hh:mm:ss zzz");
 				                Date request_date = df.parse(date);
 				                if (modified_date.getTime() > request_date.getTime())
 				                	response = HttpResponseFactory.create200OK(file, Protocol.CLOSE);
