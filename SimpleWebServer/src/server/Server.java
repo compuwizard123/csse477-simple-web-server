@@ -26,12 +26,17 @@ import gui.WebServer;
 import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * This represents a welcoming server for the incoming
  * TCP request from a HTTP client such as a web browser. 
  * 
  * @author Chandan R. Rupakheti (rupakhet@rose-hulman.edu)
+ * @author atniptw
+ * @author risdenkj
+ * @author crawfonw
  */
 public class Server implements Runnable {
 	private String rootDirectory;
@@ -41,6 +46,8 @@ public class Server implements Runnable {
 	
 	private long connections;
 	private long serviceTime;
+	
+	public Logger logger;
 	
 	private WebServer window;
 	/**
@@ -115,24 +122,33 @@ public class Server implements Runnable {
 	 * the request.
 	 */
 	public void run() {
+		
+		logger = Logger.getLogger(getClass().getName());
+		// Let each handler pick its own level
+		logger.setLevel(Level.ALL);
+		
+		logger.entering(getRootDirectory(), "run");
 		try {
 			this.welcomeSocket = new ServerSocket(port);
+			logger.config("Port: " + port);
 			
 			// Now keep welcoming new connections until stop flag is set to true
 			while(true) {
 				// Listen for incoming socket connection
 				// This method block until somebody makes a request
 				Socket connectionSocket = this.welcomeSocket.accept();
-				
+				logger.info(connectionSocket.toString());
 				// Come out of the loop if the stop flag is set
 				if(this.stop)
 					break;
 				
 				// Create a handler for this incoming connection and start the handler in a new thread
 				ConnectionHandler handler = new ConnectionHandler(this, connectionSocket);
+				logger.info("Starting tread for: " + handler.toString());
 				new Thread(handler).start();
 			}
 			this.welcomeSocket.close();
+			logger.info("Closing: " + this.welcomeSocket.toString());
 		}
 		catch(Exception e) {
 			window.showSocketException(e);
@@ -167,5 +183,10 @@ public class Server implements Runnable {
 		if(this.welcomeSocket != null)
 			return this.welcomeSocket.isClosed();
 		return true;
+	}
+	
+	public Logger getLogger()
+	{
+		return logger;
 	}
 }
