@@ -146,10 +146,10 @@ public class HttpResponseFactory {
 	 * @param connection Supported values are {@link Protocol#OPEN} and {@link Protocol#CLOSE}.
 	 * @return A {@link HttpResponse} object represent 505 status.
 	 */
-	public static HttpResponse create505NotSupported(String connection) {
+	public static HttpResponse create501NotImplemented(String connection) {
 		Server.logger.info(connection);
-		HttpResponse response = new HttpResponse(Protocol.VERSION, Protocol.NOT_SUPPORTED_CODE, 
-				Protocol.NOT_SUPPORTED_TEXT, new HashMap<String, String>(), null);
+		HttpResponse response = new HttpResponse(Protocol.VERSION, Protocol.NOT_IMPLEMENTED_CODE, 
+				Protocol.NOT_IMPLEMENTED_TEXT, new HashMap<String, String>(), null);
 		
 		// Lets fill up the header fields with more information
 		fillGeneralHeader(response, connection);

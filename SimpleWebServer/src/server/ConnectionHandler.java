@@ -227,6 +227,9 @@ public class ConnectionHandler implements Runnable {
 					response = HttpResponseFactory.create404NotFound(Protocol.CLOSE);
 				}
 			}
+			else {
+				response = HttpResponseFactory.create501NotImplemented(Protocol.CLOSE);
+			}
 		}
 		catch(Exception e) {
 			e.printStackTrace();
