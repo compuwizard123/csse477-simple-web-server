@@ -29,6 +29,8 @@ import java.io.OutputStream;
 import java.util.Collections;
 import java.util.Map;
 
+import server.Server;
+
 /**
  * Represents a response object for HTTP.
  * 
@@ -119,6 +121,7 @@ public class HttpResponse {
 	 * @throws Exception
 	 */
 	public void write(OutputStream outStream) throws Exception {
+		Server.logger.info(outStream.toString());
 		BufferedOutputStream out = new BufferedOutputStream(outStream, Protocol.CHUNK_LENGTH);
 
 		// First status line

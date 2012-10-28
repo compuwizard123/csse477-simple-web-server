@@ -47,7 +47,7 @@ public class Server implements Runnable {
 	private long connections;
 	private long serviceTime;
 	
-	public Logger logger;
+	public static Logger logger;
 	
 	private WebServer window;
 	/**

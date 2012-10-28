@@ -30,6 +30,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.StringTokenizer;
 
+import server.Server;
+
 /**
  * Represents a request object for HTTP.
  * 
@@ -91,6 +93,7 @@ public class HttpRequest {
 	 * {@link IOException} for socket input stream read errors.
 	 */
 	public static HttpRequest read(InputStream inputStream) throws Exception {
+		Server.logger.info(inputStream.toString());
 		// We will fill this object with the data from input stream and return it
 		HttpRequest request = new HttpRequest();
 		
