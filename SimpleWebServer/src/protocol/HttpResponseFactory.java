@@ -130,6 +130,7 @@ public class HttpResponseFactory {
 	}
 	
 	public static HttpResponse create408RequestTimedOut(String connection) {
+		Server.logger.info(connection);
 		HttpResponse response = new HttpResponse(Protocol.VERSION, Protocol.TIMEOUT_CODE, 
 				Protocol.TIMEOUT_TEXT, new HashMap<String, String>(), null);
 		
