@@ -129,6 +129,16 @@ public class HttpResponseFactory {
 		return response;	
 	}
 	
+	public static HttpResponse create408RequestTimedOut(String connection) {
+		HttpResponse response = new HttpResponse(Protocol.VERSION, Protocol.TIMEOUT_CODE, 
+				Protocol.TIMEOUT_TEXT, new HashMap<String, String>(), null);
+		
+		// Lets fill up header fields with more information
+		fillGeneralHeader(response, connection);
+		
+		return response;
+	}
+	
 	/**
 	 * Creates a {@link HttpResponse} object for sending version not supported response.
 	 * 

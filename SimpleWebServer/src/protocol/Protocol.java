@@ -53,6 +53,9 @@ public class Protocol {
     public static final int NOT_FOUND_CODE = 404;
     public static final String NOT_FOUND_TEXT = "Not Found";
     
+    public static final int TIMEOUT_CODE = 408;
+    public static final String TIMEOUT_TEXT = "Request Timed Out";
+    
     public static final int NOT_SUPPORTED_CODE = 505;
     public static final String NOT_SUPPORTED_TEXT = "HTTP Version Not Supported";
 

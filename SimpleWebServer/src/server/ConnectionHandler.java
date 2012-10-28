@@ -32,6 +32,8 @@ import protocol.HttpResponseFactory;
 import protocol.Protocol;
 import protocol.ProtocolException;
 
+import java.util.PriorityQueue;
+
 /**
  * This class is responsible for handling a incoming request
  * by creating a {@link HttpRequest} object and sending the appropriate
@@ -43,10 +45,13 @@ import protocol.ProtocolException;
 public class ConnectionHandler implements Runnable {
 	private Server server;
 	private Socket socket;
+	private PriorityQueue<HttpRequest> queue;
+	private final int MAX_EXEC_TIME = 10000; //in ms
 	
 	public ConnectionHandler(Server server, Socket socket) {
 		this.server = server;
 		this.socket = socket;
+		this.queue = new PriorityQueue<HttpRequest>();
 	}
 	
 	/**
@@ -130,6 +135,13 @@ public class ConnectionHandler implements Runnable {
 			return;
 		}
 		
+		if(responseTimeTooLong(start, outStream, response)){
+			return;
+		}
+		
+		this.queue.add(request);
+		request = this.queue.poll();
+		
 		// We reached here means no error so far, so lets process further
 		try {
 			// Fill in the code to create a response for version mismatch.
@@ -141,6 +153,9 @@ public class ConnectionHandler implements Runnable {
 				// TODO: Fill in the rest of the code here
 			}
 			else if(request.getMethod().equalsIgnoreCase(Protocol.GET)) {
+				if(responseTimeTooLong(start, outStream, response)){
+					return;
+				}
 //				Map<String, String> header = request.getHeader();
 //				String date = header.get("if-modified-since");
 //				String hostName = header.get("host");
@@ -152,28 +167,49 @@ public class ConnectionHandler implements Runnable {
 				String rootDirectory = server.getRootDirectory();
 				// Combine them together to form absolute file path
 				File file = new File(rootDirectory + uri);
+				if(responseTimeTooLong(start, outStream, response)){
+					return;
+				}
 				// Check if the file exists
 				if(file.exists()) {
+					if(responseTimeTooLong(start, outStream, response)){
+						return;
+					}
 					if(file.isDirectory()) {
 						// Look for default index.html file in a directory
+						if(responseTimeTooLong(start, outStream, response)){
+							return;
+						}
 						String location = rootDirectory + uri + System.getProperty("file.separator") + Protocol.DEFAULT_FILE;
 						file = new File(location);
 						if(file.exists()) {
 							// Lets create 200 OK response
+							if(responseTimeTooLong(start, outStream, response)){
+								return;
+							}
 							response = HttpResponseFactory.create200OK(file, Protocol.CLOSE);
 						}
 						else {
 							// File does not exist so lets create 404 file not found code
+							if(responseTimeTooLong(start, outStream, response)){
+								return;
+							}
 							response = HttpResponseFactory.create404NotFound(Protocol.CLOSE);
 						}
 					}
 					else { // Its a file
 						// Lets create 200 OK response
+						if(responseTimeTooLong(start, outStream, response)){
+							return;
+						}
 						response = HttpResponseFactory.create200OK(file, Protocol.CLOSE);
 					}
 				}
 				else {
 					// File does not exist so lets create 404 file not found code
+					if(responseTimeTooLong(start, outStream, response)){
+						return;
+					}
 					response = HttpResponseFactory.create404NotFound(Protocol.CLOSE);
 				}
 			}
@@ -182,7 +218,9 @@ public class ConnectionHandler implements Runnable {
 			e.printStackTrace();
 		}
 		
-
+		if(responseTimeTooLong(start, outStream, response)){
+			return;
+		}
 		// TODO: So far response could be null for protocol version mismatch.
 		// So this is a temporary patch for that problem and should be removed
 		// after a response object is created for protocol version mismatch.
@@ -206,5 +244,32 @@ public class ConnectionHandler implements Runnable {
 		// Get the end time
 		long end = System.currentTimeMillis();
 		this.server.incrementServiceTime(end-start);
+	}
+
+	/**
+	 * @param start
+	 * @param outStream
+	 * @param response
+	 * @return
+	 */
+	private boolean responseTimeTooLong(long start, OutputStream outStream,
+			HttpResponse response) {
+		if(System.currentTimeMillis() - start > MAX_EXEC_TIME){
+			response = HttpResponseFactory.create408RequestTimedOut(Protocol.CLOSE);
+			try {
+				response.write(outStream);
+				socket.close();
+//				System.out.println(response);
+			}
+			catch(Exception e){
+				// We will ignore this exception
+				e.printStackTrace();
+			}
+			server.incrementConnections(1);
+			long end = System.currentTimeMillis();
+			this.server.incrementServiceTime(end-start);
+			return true;
+		}
+		return false;
 	}
 }
