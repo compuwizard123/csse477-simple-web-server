@@ -161,8 +161,6 @@ public class ConnectionHandler implements Runnable {
 				}
 				Map<String, String> header = request.getHeader();
 				String date = header.get("if-modified-since");
-				String hostName = header.get("host");
-				System.out.println(date);
 				
 				// Handling GET request here
 				// Get relative URI path from request
@@ -195,9 +193,9 @@ public class ConnectionHandler implements Runnable {
 							if(date != null){
 								long datetime = file.lastModified();
 				                Date modified_date = new Date(datetime);
-				                SimpleDateFormat df = new SimpleDateFormat("EEE, dd-MMM-yyyy HH:mm:ss zzz");
+				                SimpleDateFormat df = new SimpleDateFormat("EEE, dd MMM yyyy HH:mm:ss zzz");
 				                Date request_date = df.parse(date);
-				                if (modified_date.after(request_date))
+				                if (modified_date.getTime() > request_date.getTime())
 				                	response = HttpResponseFactory.create200OK(file, Protocol.CLOSE);
 				                else
 				                	response = HttpResponseFactory.create304NotModified(Protocol.CLOSE);
