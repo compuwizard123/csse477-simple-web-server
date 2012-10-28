@@ -249,7 +249,8 @@ public class ConnectionHandler implements Runnable {
 			// Write response and we are all done so close the socket
 			response.write(outStream);
 //			System.out.println(response);
-			socket.close();
+			if(!socket.getKeepAlive())
+				socket.close();
 		}
 		catch(Exception e){
 			// We will ignore this exception
@@ -275,7 +276,8 @@ public class ConnectionHandler implements Runnable {
 			response = HttpResponseFactory.create408RequestTimedOut(Protocol.CLOSE);
 			try {
 				response.write(outStream);
-				socket.close();
+				if(!socket.getKeepAlive())
+					socket.close();
 			}
 			catch(Exception e){
 				e.printStackTrace();
