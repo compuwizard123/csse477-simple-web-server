@@ -130,6 +130,7 @@ public class Server implements Runnable {
 
 		logger = Logger.getLogger(getClass().getName());
 
+		//Give the logger a file to record to
 		logger.info("Adding FileHandler");
 		try {
 			logger.addHandler(new FileHandler(Server.class.getName() + ".main.log"));
@@ -143,7 +144,7 @@ public class Server implements Runnable {
 		// Let each handler pick its own level
 		logger.setLevel(Level.ALL);
 
-		logger.entering(getRootDirectory(), "run");
+		logger.entering(getRootDirectory(), "run\n");
 		try {
 			this.welcomeSocket = new ServerSocket(port);
 			logger.config("Port: " + port);
@@ -165,16 +166,7 @@ public class Server implements Runnable {
 				logger.info("Starting tread for: " + handler.toString());
 				new Thread(handler).start();
 
-				// BufferedWriter log = new BufferedWriter();
-				// log.write(logger.toString());
-				// log.close();
-
-				File file = new File("log.txt");
-				FileWriter fileWritter = new FileWriter(file.getName(), true);
-				BufferedWriter bufferWritter = new BufferedWriter(fileWritter);
-				bufferWritter.write(logger.toString() + "\n");
-				bufferWritter.close();
-
+				//Save Server state
 				BufferedWriter heart = new BufferedWriter(new FileWriter(
 						"heartbeat.txt"));
 				heart.write("Connections: " + connections + "\n"
@@ -182,7 +174,7 @@ public class Server implements Runnable {
 				heart.close();
 			}
 			this.welcomeSocket.close();
-			logger.info("Closing: " + this.welcomeSocket.toString());
+			logger.info("Closing: " + this.welcomeSocket.toString() + "\n");
 		} catch (Exception e) {
 			window.showSocketException(e);
 		}

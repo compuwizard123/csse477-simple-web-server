@@ -93,7 +93,7 @@ public class HttpRequest {
 	 * {@link IOException} for socket input stream read errors.
 	 */
 	public static HttpRequest read(InputStream inputStream) throws Exception {
-		Server.logger.info(inputStream.toString());
+		Server.logger.info(inputStream.toString() + "\n");
 		// We will fill this object with the data from input stream and return it
 		HttpRequest request = new HttpRequest();
 		

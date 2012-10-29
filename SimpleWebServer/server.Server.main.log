@@ -2,8 +2,8 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2012-10-28T15:51:35</date>
-  <millis>1351453895288</millis>
+  <date>2012-10-28T15:57:11</date>
+  <millis>1351454231140</millis>
   <sequence>1</sequence>
   <logger>server.Server</logger>
   <level>FINER</level>
@@ -13,8 +13,8 @@
   <message>ENTRY</message>
 </record>
 <record>
-  <date>2012-10-28T15:51:35</date>
-  <millis>1351453895292</millis>
+  <date>2012-10-28T15:57:11</date>
+  <millis>1351454231145</millis>
   <sequence>2</sequence>
   <logger>server.Server</logger>
   <level>CONFIG</level>
@@ -24,96 +24,96 @@
   <message>Port: 8080</message>
 </record>
 <record>
-  <date>2012-10-28T15:51:58</date>
-  <millis>1351453918098</millis>
+  <date>2012-10-28T15:57:27</date>
+  <millis>1351454247375</millis>
   <sequence>3</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>server.Server</class>
   <method>run</method>
   <thread>18</thread>
-  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63379,localport=8080]</message>
+  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63479,localport=8080]</message>
 </record>
 <record>
-  <date>2012-10-28T15:51:58</date>
-  <millis>1351453918107</millis>
+  <date>2012-10-28T15:57:27</date>
+  <millis>1351454247378</millis>
   <sequence>4</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>server.Server</class>
   <method>run</method>
   <thread>18</thread>
-  <message>Starting tread for: server.ConnectionHandler@1cbcec51</message>
+  <message>Starting tread for: server.ConnectionHandler@1ec246b0</message>
 </record>
 <record>
-  <date>2012-10-28T15:51:58</date>
-  <millis>1351453918110</millis>
+  <date>2012-10-28T15:57:27</date>
+  <millis>1351454247382</millis>
   <sequence>5</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>protocol.HttpRequest</class>
   <method>read</method>
   <thread>21</thread>
-  <message>java.net.SocketInputStream@6d955a65</message>
+  <message>java.net.SocketInputStream@783600ab</message>
 </record>
 <record>
-  <date>2012-10-28T15:51:58</date>
-  <millis>1351453918111</millis>
+  <date>2012-10-28T15:57:27</date>
+  <millis>1351454247390</millis>
   <sequence>6</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>server.Server</class>
   <method>run</method>
   <thread>18</thread>
-  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63380,localport=8080]</message>
+  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63480,localport=8080]</message>
 </record>
 <record>
-  <date>2012-10-28T15:51:58</date>
-  <millis>1351453918112</millis>
+  <date>2012-10-28T15:57:27</date>
+  <millis>1351454247391</millis>
   <sequence>7</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>server.Server</class>
   <method>run</method>
   <thread>18</thread>
-  <message>Starting tread for: server.ConnectionHandler@6861d517</message>
+  <message>Starting tread for: server.ConnectionHandler@21661835</message>
 </record>
 <record>
-  <date>2012-10-28T15:51:58</date>
-  <millis>1351453918112</millis>
+  <date>2012-10-28T15:57:27</date>
+  <millis>1351454247392</millis>
   <sequence>8</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>protocol.HttpResponseFactory</class>
-  <method>create404NotFound</method>
+  <method>create200OK</method>
   <thread>21</thread>
   <message>Close</message>
 </record>
 <record>
-  <date>2012-10-28T15:51:58</date>
-  <millis>1351453918114</millis>
+  <date>2012-10-28T15:57:27</date>
+  <millis>1351454247392</millis>
   <sequence>9</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>protocol.HttpRequest</class>
   <method>read</method>
   <thread>22</thread>
-  <message>java.net.SocketInputStream@e6d7809</message>
+  <message>java.net.SocketInputStream@284c1da6</message>
 </record>
 <record>
-  <date>2012-10-28T15:51:58</date>
-  <millis>1351453918121</millis>
+  <date>2012-10-28T15:57:27</date>
+  <millis>1351454247409</millis>
   <sequence>10</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>protocol.HttpResponse</class>
   <method>write</method>
   <thread>21</thread>
-  <message>java.net.SocketOutputStream@59127dc0</message>
+  <message>java.net.SocketOutputStream@3c536f11</message>
 </record>
 <record>
-  <date>2012-10-28T15:51:58</date>
-  <millis>1351453918211</millis>
+  <date>2012-10-28T15:57:27</date>
+  <millis>1351454247525</millis>
   <sequence>11</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
@@ -123,64 +123,53 @@
   <message>Close</message>
 </record>
 <record>
-  <date>2012-10-28T15:51:58</date>
-  <millis>1351453918212</millis>
+  <date>2012-10-28T15:57:27</date>
+  <millis>1351454247526</millis>
   <sequence>12</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>protocol.HttpResponse</class>
   <method>write</method>
   <thread>22</thread>
-  <message>java.net.SocketOutputStream@3ffc5306</message>
+  <message>java.net.SocketOutputStream@2d8cc78</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:15</date>
-  <millis>1351453935598</millis>
+  <date>2012-10-28T15:57:37</date>
+  <millis>1351454257140</millis>
   <sequence>13</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>server.Server</class>
   <method>run</method>
   <thread>18</thread>
-  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63385,localport=8080]</message>
+  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63483,localport=8080]</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:15</date>
-  <millis>1351453935599</millis>
+  <date>2012-10-28T15:57:37</date>
+  <millis>1351454257141</millis>
   <sequence>14</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>server.Server</class>
   <method>run</method>
   <thread>18</thread>
-  <message>Starting tread for: server.ConnectionHandler@7fe0bd7c</message>
+  <message>Starting tread for: server.ConnectionHandler@634d6f2c</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:15</date>
-  <millis>1351453935601</millis>
+  <date>2012-10-28T15:57:37</date>
+  <millis>1351454257143</millis>
   <sequence>15</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>protocol.HttpRequest</class>
   <method>read</method>
   <thread>23</thread>
-  <message>java.net.SocketInputStream@3fa980b</message>
+  <message>java.net.SocketInputStream@42ed8181</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:15</date>
-  <millis>1351453935606</millis>
+  <date>2012-10-28T15:57:37</date>
+  <millis>1351454257148</millis>
   <sequence>16</sequence>
-  <logger>server.Server</logger>
-  <level>INFO</level>
-  <class>server.Server</class>
-  <method>run</method>
-  <thread>18</thread>
-  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63386,localport=8080]</message>
-</record>
-<record>
-  <date>2012-10-28T15:52:15</date>
-  <millis>1351453935606</millis>
-  <sequence>17</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>protocol.HttpResponseFactory</class>
@@ -189,41 +178,52 @@
   <message>Close</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:15</date>
-  <millis>1351453935608</millis>
+  <date>2012-10-28T15:57:37</date>
+  <millis>1351454257148</millis>
+  <sequence>17</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>server.Server</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63484,localport=8080]</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:37</date>
+  <millis>1351454257150</millis>
   <sequence>18</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>server.Server</class>
   <method>run</method>
   <thread>18</thread>
-  <message>Starting tread for: server.ConnectionHandler@3913fc37</message>
+  <message>Starting tread for: server.ConnectionHandler@76d15e7a</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:15</date>
-  <millis>1351453935610</millis>
+  <date>2012-10-28T15:57:37</date>
+  <millis>1351454257151</millis>
   <sequence>19</sequence>
-  <logger>server.Server</logger>
-  <level>INFO</level>
-  <class>protocol.HttpRequest</class>
-  <method>read</method>
-  <thread>24</thread>
-  <message>java.net.SocketInputStream@4e636942</message>
-</record>
-<record>
-  <date>2012-10-28T15:52:15</date>
-  <millis>1351453935616</millis>
-  <sequence>20</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>protocol.HttpResponse</class>
   <method>write</method>
   <thread>23</thread>
-  <message>java.net.SocketOutputStream@60939442</message>
+  <message>java.net.SocketOutputStream@46e5dce1</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:15</date>
-  <millis>1351453935694</millis>
+  <date>2012-10-28T15:57:37</date>
+  <millis>1351454257152</millis>
+  <sequence>20</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpRequest</class>
+  <method>read</method>
+  <thread>24</thread>
+  <message>java.net.SocketInputStream@1d085c24</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:37</date>
+  <millis>1351454257207</millis>
   <sequence>21</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
@@ -233,107 +233,107 @@
   <message>Close</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:15</date>
-  <millis>1351453935695</millis>
+  <date>2012-10-28T15:57:37</date>
+  <millis>1351454257208</millis>
   <sequence>22</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>protocol.HttpResponse</class>
   <method>write</method>
   <thread>24</thread>
-  <message>java.net.SocketOutputStream@8dc488c</message>
+  <message>java.net.SocketOutputStream@3a888c1</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:16</date>
-  <millis>1351453936893</millis>
+  <date>2012-10-28T15:57:37</date>
+  <millis>1351454257682</millis>
   <sequence>23</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>server.Server</class>
   <method>run</method>
   <thread>18</thread>
-  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63389,localport=8080]</message>
+  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63485,localport=8080]</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:16</date>
-  <millis>1351453936894</millis>
+  <date>2012-10-28T15:57:37</date>
+  <millis>1351454257683</millis>
   <sequence>24</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>server.Server</class>
   <method>run</method>
   <thread>18</thread>
-  <message>Starting tread for: server.ConnectionHandler@2602613b</message>
+  <message>Starting tread for: server.ConnectionHandler@275a83d</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:16</date>
-  <millis>1351453936904</millis>
+  <date>2012-10-28T15:57:37</date>
+  <millis>1351454257684</millis>
   <sequence>25</sequence>
-  <logger>server.Server</logger>
-  <level>INFO</level>
-  <class>server.Server</class>
-  <method>run</method>
-  <thread>18</thread>
-  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63390,localport=8080]</message>
-</record>
-<record>
-  <date>2012-10-28T15:52:16</date>
-  <millis>1351453936905</millis>
-  <sequence>26</sequence>
-  <logger>server.Server</logger>
-  <level>INFO</level>
-  <class>server.Server</class>
-  <method>run</method>
-  <thread>18</thread>
-  <message>Starting tread for: server.ConnectionHandler@4e96d02d</message>
-</record>
-<record>
-  <date>2012-10-28T15:52:16</date>
-  <millis>1351453936905</millis>
-  <sequence>27</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>protocol.HttpRequest</class>
   <method>read</method>
   <thread>25</thread>
-  <message>java.net.SocketInputStream@f3d62aa</message>
+  <message>java.net.SocketInputStream@6c32064b</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:16</date>
-  <millis>1351453936906</millis>
-  <sequence>28</sequence>
-  <logger>server.Server</logger>
-  <level>INFO</level>
-  <class>protocol.HttpRequest</class>
-  <method>read</method>
-  <thread>26</thread>
-  <message>java.net.SocketInputStream@5d419404</message>
-</record>
-<record>
-  <date>2012-10-28T15:52:16</date>
-  <millis>1351453936907</millis>
-  <sequence>29</sequence>
+  <date>2012-10-28T15:57:37</date>
+  <millis>1351454257693</millis>
+  <sequence>26</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>protocol.HttpResponseFactory</class>
-  <method>create404NotFound</method>
+  <method>create200OK</method>
   <thread>25</thread>
   <message>Close</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:16</date>
-  <millis>1351453936908</millis>
-  <sequence>30</sequence>
+  <date>2012-10-28T15:57:37</date>
+  <millis>1351454257694</millis>
+  <sequence>27</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>server.Server</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63486,localport=8080]</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:37</date>
+  <millis>1351454257695</millis>
+  <sequence>28</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>server.Server</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>Starting tread for: server.ConnectionHandler@483b5d6b</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:37</date>
+  <millis>1351454257696</millis>
+  <sequence>29</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>protocol.HttpResponse</class>
   <method>write</method>
   <thread>25</thread>
-  <message>java.net.SocketOutputStream@7c5cc270</message>
+  <message>java.net.SocketOutputStream@317240d9</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:16</date>
-  <millis>1351453936981</millis>
+  <date>2012-10-28T15:57:37</date>
+  <millis>1351454257698</millis>
+  <sequence>30</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpRequest</class>
+  <method>read</method>
+  <thread>26</thread>
+  <message>java.net.SocketInputStream@3b27402d</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:37</date>
+  <millis>1351454257743</millis>
   <sequence>31</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
@@ -343,107 +343,107 @@
   <message>Close</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:16</date>
-  <millis>1351453936982</millis>
+  <date>2012-10-28T15:57:37</date>
+  <millis>1351454257750</millis>
   <sequence>32</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>protocol.HttpResponse</class>
   <method>write</method>
   <thread>26</thread>
-  <message>java.net.SocketOutputStream@315c2817</message>
+  <message>java.net.SocketOutputStream@11e3853f</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:17</date>
-  <millis>1351453937587</millis>
+  <date>2012-10-28T15:57:38</date>
+  <millis>1351454258083</millis>
   <sequence>33</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>server.Server</class>
   <method>run</method>
   <thread>18</thread>
-  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63391,localport=8080]</message>
+  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63487,localport=8080]</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:17</date>
-  <millis>1351453937588</millis>
+  <date>2012-10-28T15:57:38</date>
+  <millis>1351454258084</millis>
   <sequence>34</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>server.Server</class>
   <method>run</method>
   <thread>18</thread>
-  <message>Starting tread for: server.ConnectionHandler@528f1577</message>
+  <message>Starting tread for: server.ConnectionHandler@38651796</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:17</date>
-  <millis>1351453937591</millis>
+  <date>2012-10-28T15:57:38</date>
+  <millis>1351454258085</millis>
   <sequence>35</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>protocol.HttpRequest</class>
   <method>read</method>
   <thread>27</thread>
-  <message>java.net.SocketInputStream@fe63af2</message>
+  <message>java.net.SocketInputStream@1d523624</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:17</date>
-  <millis>1351453937595</millis>
+  <date>2012-10-28T15:57:38</date>
+  <millis>1351454258089</millis>
   <sequence>36</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>protocol.HttpResponseFactory</class>
-  <method>create404NotFound</method>
+  <method>create200OK</method>
   <thread>27</thread>
   <message>Close</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:17</date>
-  <millis>1351453937596</millis>
+  <date>2012-10-28T15:57:38</date>
+  <millis>1351454258092</millis>
   <sequence>37</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>protocol.HttpResponse</class>
   <method>write</method>
   <thread>27</thread>
-  <message>java.net.SocketOutputStream@5427ee05</message>
+  <message>java.net.SocketOutputStream@608486</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:17</date>
-  <millis>1351453937598</millis>
+  <date>2012-10-28T15:57:38</date>
+  <millis>1351454258093</millis>
   <sequence>38</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>server.Server</class>
   <method>run</method>
   <thread>18</thread>
-  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63392,localport=8080]</message>
+  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63488,localport=8080]</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:17</date>
-  <millis>1351453937599</millis>
+  <date>2012-10-28T15:57:38</date>
+  <millis>1351454258093</millis>
   <sequence>39</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>server.Server</class>
   <method>run</method>
   <thread>18</thread>
-  <message>Starting tread for: server.ConnectionHandler@18c40bf8</message>
+  <message>Starting tread for: server.ConnectionHandler@409c799b</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:17</date>
-  <millis>1351453937603</millis>
+  <date>2012-10-28T15:57:38</date>
+  <millis>1351454258096</millis>
   <sequence>40</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>protocol.HttpRequest</class>
   <method>read</method>
   <thread>28</thread>
-  <message>java.net.SocketInputStream@3fd76922</message>
+  <message>java.net.SocketInputStream@26ed4b7a</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:17</date>
-  <millis>1351453937668</millis>
+  <date>2012-10-28T15:57:38</date>
+  <millis>1351454258149</millis>
   <sequence>41</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
@@ -453,107 +453,107 @@
   <message>Close</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:17</date>
-  <millis>1351453937669</millis>
+  <date>2012-10-28T15:57:38</date>
+  <millis>1351454258150</millis>
   <sequence>42</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>protocol.HttpResponse</class>
   <method>write</method>
   <thread>28</thread>
-  <message>java.net.SocketOutputStream@573757ec</message>
+  <message>java.net.SocketOutputStream@3f7ac6d8</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:21</date>
-  <millis>1351453941267</millis>
+  <date>2012-10-28T15:57:38</date>
+  <millis>1351454258838</millis>
   <sequence>43</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>server.Server</class>
   <method>run</method>
   <thread>18</thread>
-  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63393,localport=8080]</message>
+  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63489,localport=8080]</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:21</date>
-  <millis>1351453941269</millis>
+  <date>2012-10-28T15:57:38</date>
+  <millis>1351454258839</millis>
   <sequence>44</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>server.Server</class>
   <method>run</method>
   <thread>18</thread>
-  <message>Starting tread for: server.ConnectionHandler@3896bfe3</message>
+  <message>Starting tread for: server.ConnectionHandler@548bb8b2</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:21</date>
-  <millis>1351453941270</millis>
+  <date>2012-10-28T15:57:38</date>
+  <millis>1351454258840</millis>
   <sequence>45</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>protocol.HttpRequest</class>
   <method>read</method>
   <thread>29</thread>
-  <message>java.net.SocketInputStream@c97a0c7</message>
+  <message>java.net.SocketInputStream@4f4c2b2f</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:21</date>
-  <millis>1351453941274</millis>
+  <date>2012-10-28T15:57:38</date>
+  <millis>1351454258844</millis>
   <sequence>46</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>protocol.HttpResponseFactory</class>
-  <method>create404NotFound</method>
+  <method>create200OK</method>
   <thread>29</thread>
   <message>Close</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:21</date>
-  <millis>1351453941275</millis>
+  <date>2012-10-28T15:57:38</date>
+  <millis>1351454258846</millis>
   <sequence>47</sequence>
-  <logger>server.Server</logger>
-  <level>INFO</level>
-  <class>protocol.HttpResponse</class>
-  <method>write</method>
-  <thread>29</thread>
-  <message>java.net.SocketOutputStream@36bc6f46</message>
-</record>
-<record>
-  <date>2012-10-28T15:52:21</date>
-  <millis>1351453941285</millis>
-  <sequence>48</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>server.Server</class>
   <method>run</method>
   <thread>18</thread>
-  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63394,localport=8080]</message>
+  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63490,localport=8080]</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:21</date>
-  <millis>1351453941287</millis>
+  <date>2012-10-28T15:57:38</date>
+  <millis>1351454258847</millis>
+  <sequence>48</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpResponse</class>
+  <method>write</method>
+  <thread>29</thread>
+  <message>java.net.SocketOutputStream@11a74355</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:38</date>
+  <millis>1351454258847</millis>
   <sequence>49</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>server.Server</class>
   <method>run</method>
   <thread>18</thread>
-  <message>Starting tread for: server.ConnectionHandler@2451c70d</message>
+  <message>Starting tread for: server.ConnectionHandler@7c358a80</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:21</date>
-  <millis>1351453941306</millis>
+  <date>2012-10-28T15:57:38</date>
+  <millis>1351454258848</millis>
   <sequence>50</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>protocol.HttpRequest</class>
   <method>read</method>
   <thread>30</thread>
-  <message>java.net.SocketInputStream@71ba5790</message>
+  <message>java.net.SocketInputStream@671ef685</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:21</date>
-  <millis>1351453941361</millis>
+  <date>2012-10-28T15:57:38</date>
+  <millis>1351454258901</millis>
   <sequence>51</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
@@ -563,53 +563,75 @@
   <message>Close</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:21</date>
-  <millis>1351453941362</millis>
+  <date>2012-10-28T15:57:38</date>
+  <millis>1351454258905</millis>
   <sequence>52</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>protocol.HttpResponse</class>
   <method>write</method>
   <thread>30</thread>
-  <message>java.net.SocketOutputStream@cae945</message>
+  <message>java.net.SocketOutputStream@8beab46</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:31</date>
-  <millis>1351453951122</millis>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259209</millis>
   <sequence>53</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>server.Server</class>
   <method>run</method>
   <thread>18</thread>
-  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63398,localport=8080]</message>
+  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63491,localport=8080]</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:31</date>
-  <millis>1351453951123</millis>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259209</millis>
   <sequence>54</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>server.Server</class>
   <method>run</method>
   <thread>18</thread>
-  <message>Starting tread for: server.ConnectionHandler@7a7ecb9</message>
+  <message>Starting tread for: server.ConnectionHandler@7bf7911b</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:31</date>
-  <millis>1351453951125</millis>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259211</millis>
   <sequence>55</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>protocol.HttpRequest</class>
   <method>read</method>
   <thread>31</thread>
-  <message>java.net.SocketInputStream@345f9206</message>
+  <message>java.net.SocketInputStream@57d0258a</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:31</date>
-  <millis>1351453951129</millis>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259216</millis>
   <sequence>56</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>server.Server</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63492,localport=8080]</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259217</millis>
+  <sequence>57</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>server.Server</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>Starting tread for: server.ConnectionHandler@2250b410</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259218</millis>
+  <sequence>58</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>protocol.HttpResponseFactory</class>
@@ -618,52 +640,30 @@
   <message>Close</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:31</date>
-  <millis>1351453951130</millis>
-  <sequence>57</sequence>
-  <logger>server.Server</logger>
-  <level>INFO</level>
-  <class>protocol.HttpResponse</class>
-  <method>write</method>
-  <thread>31</thread>
-  <message>java.net.SocketOutputStream@44c99f45</message>
-</record>
-<record>
-  <date>2012-10-28T15:52:31</date>
-  <millis>1351453951136</millis>
-  <sequence>58</sequence>
-  <logger>server.Server</logger>
-  <level>INFO</level>
-  <class>server.Server</class>
-  <method>run</method>
-  <thread>18</thread>
-  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63399,localport=8080]</message>
-</record>
-<record>
-  <date>2012-10-28T15:52:31</date>
-  <millis>1351453951137</millis>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259218</millis>
   <sequence>59</sequence>
-  <logger>server.Server</logger>
-  <level>INFO</level>
-  <class>server.Server</class>
-  <method>run</method>
-  <thread>18</thread>
-  <message>Starting tread for: server.ConnectionHandler@6c9ee6a0</message>
-</record>
-<record>
-  <date>2012-10-28T15:52:31</date>
-  <millis>1351453951152</millis>
-  <sequence>60</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>protocol.HttpRequest</class>
   <method>read</method>
   <thread>32</thread>
-  <message>java.net.SocketInputStream@19e10522</message>
+  <message>java.net.SocketInputStream@20a8a84c</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:31</date>
-  <millis>1351453951216</millis>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259221</millis>
+  <sequence>60</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpResponse</class>
+  <method>write</method>
+  <thread>31</thread>
+  <message>java.net.SocketOutputStream@20c12654</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259286</millis>
   <sequence>61</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
@@ -673,14 +673,564 @@
   <message>Close</message>
 </record>
 <record>
-  <date>2012-10-28T15:52:31</date>
-  <millis>1351453951217</millis>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259287</millis>
   <sequence>62</sequence>
   <logger>server.Server</logger>
   <level>INFO</level>
   <class>protocol.HttpResponse</class>
   <method>write</method>
   <thread>32</thread>
-  <message>java.net.SocketOutputStream@4180874</message>
+  <message>java.net.SocketOutputStream@845ca53</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259408</millis>
+  <sequence>63</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>server.Server</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63493,localport=8080]</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259409</millis>
+  <sequence>64</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>server.Server</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>Starting tread for: server.ConnectionHandler@6c02d7ea</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259411</millis>
+  <sequence>65</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpRequest</class>
+  <method>read</method>
+  <thread>33</thread>
+  <message>java.net.SocketInputStream@7f6968c4</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259415</millis>
+  <sequence>66</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpResponseFactory</class>
+  <method>create200OK</method>
+  <thread>33</thread>
+  <message>Close</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259417</millis>
+  <sequence>67</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpResponse</class>
+  <method>write</method>
+  <thread>33</thread>
+  <message>java.net.SocketOutputStream@615d5d35</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259443</millis>
+  <sequence>68</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>server.Server</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63494,localport=8080]</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259444</millis>
+  <sequence>69</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>server.Server</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>Starting tread for: server.ConnectionHandler@171f6179</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259446</millis>
+  <sequence>70</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpRequest</class>
+  <method>read</method>
+  <thread>34</thread>
+  <message>java.net.SocketInputStream@6ed0cc34</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259500</millis>
+  <sequence>71</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpResponseFactory</class>
+  <method>create404NotFound</method>
+  <thread>34</thread>
+  <message>Close</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259501</millis>
+  <sequence>72</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpResponse</class>
+  <method>write</method>
+  <thread>34</thread>
+  <message>java.net.SocketOutputStream@4e0ea2c2</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259588</millis>
+  <sequence>73</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>server.Server</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63495,localport=8080]</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259588</millis>
+  <sequence>74</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>server.Server</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>Starting tread for: server.ConnectionHandler@517a564</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259592</millis>
+  <sequence>75</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpRequest</class>
+  <method>read</method>
+  <thread>35</thread>
+  <message>java.net.SocketInputStream@28fed5b1</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259596</millis>
+  <sequence>76</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>server.Server</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63496,localport=8080]</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259597</millis>
+  <sequence>77</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpResponseFactory</class>
+  <method>create200OK</method>
+  <thread>35</thread>
+  <message>Close</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259597</millis>
+  <sequence>78</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>server.Server</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>Starting tread for: server.ConnectionHandler@727f6c7d</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259598</millis>
+  <sequence>79</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpRequest</class>
+  <method>read</method>
+  <thread>36</thread>
+  <message>java.net.SocketInputStream@381702ff</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259600</millis>
+  <sequence>80</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpResponse</class>
+  <method>write</method>
+  <thread>35</thread>
+  <message>java.net.SocketOutputStream@6ec5d01d</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259677</millis>
+  <sequence>81</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpResponseFactory</class>
+  <method>create404NotFound</method>
+  <thread>36</thread>
+  <message>Close</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259679</millis>
+  <sequence>82</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpResponse</class>
+  <method>write</method>
+  <thread>36</thread>
+  <message>java.net.SocketOutputStream@702f9d0a</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259789</millis>
+  <sequence>83</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>server.Server</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63497,localport=8080]</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259790</millis>
+  <sequence>84</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>server.Server</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>Starting tread for: server.ConnectionHandler@5b84d14e</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259791</millis>
+  <sequence>85</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpRequest</class>
+  <method>read</method>
+  <thread>37</thread>
+  <message>java.net.SocketInputStream@22b27cca</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259799</millis>
+  <sequence>86</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>server.Server</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63498,localport=8080]</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259800</millis>
+  <sequence>87</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>server.Server</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>Starting tread for: server.ConnectionHandler@741ec391</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259801</millis>
+  <sequence>88</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpResponseFactory</class>
+  <method>create200OK</method>
+  <thread>37</thread>
+  <message>Close</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259804</millis>
+  <sequence>89</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpRequest</class>
+  <method>read</method>
+  <thread>38</thread>
+  <message>java.net.SocketInputStream@63c126da</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259805</millis>
+  <sequence>90</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpResponse</class>
+  <method>write</method>
+  <thread>37</thread>
+  <message>java.net.SocketOutputStream@1ddde560</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259887</millis>
+  <sequence>91</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpResponseFactory</class>
+  <method>create404NotFound</method>
+  <thread>38</thread>
+  <message>Close</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259888</millis>
+  <sequence>92</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpResponse</class>
+  <method>write</method>
+  <thread>38</thread>
+  <message>java.net.SocketOutputStream@260a68c8</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259994</millis>
+  <sequence>93</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>server.Server</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63499,localport=8080]</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259995</millis>
+  <sequence>94</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>server.Server</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>Starting tread for: server.ConnectionHandler@47baec4c</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:39</date>
+  <millis>1351454259996</millis>
+  <sequence>95</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpRequest</class>
+  <method>read</method>
+  <thread>39</thread>
+  <message>java.net.SocketInputStream@317916a0</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:40</date>
+  <millis>1351454260011</millis>
+  <sequence>96</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>server.Server</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63500,localport=8080]</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:40</date>
+  <millis>1351454260012</millis>
+  <sequence>97</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>server.Server</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>Starting tread for: server.ConnectionHandler@72607cad</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:40</date>
+  <millis>1351454260015</millis>
+  <sequence>98</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpResponseFactory</class>
+  <method>create200OK</method>
+  <thread>39</thread>
+  <message>Close</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:40</date>
+  <millis>1351454260017</millis>
+  <sequence>99</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpResponse</class>
+  <method>write</method>
+  <thread>39</thread>
+  <message>java.net.SocketOutputStream@20be0e6e</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:40</date>
+  <millis>1351454260021</millis>
+  <sequence>100</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpRequest</class>
+  <method>read</method>
+  <thread>40</thread>
+  <message>java.net.SocketInputStream@1da5688d</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:40</date>
+  <millis>1351454260110</millis>
+  <sequence>101</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpResponseFactory</class>
+  <method>create404NotFound</method>
+  <thread>40</thread>
+  <message>Close</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:40</date>
+  <millis>1351454260112</millis>
+  <sequence>102</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpResponse</class>
+  <method>write</method>
+  <thread>40</thread>
+  <message>java.net.SocketOutputStream@1c2baa00</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:40</date>
+  <millis>1351454260264</millis>
+  <sequence>103</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>server.Server</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63501,localport=8080]</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:40</date>
+  <millis>1351454260265</millis>
+  <sequence>104</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>server.Server</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>Starting tread for: server.ConnectionHandler@953a539</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:40</date>
+  <millis>1351454260266</millis>
+  <sequence>105</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpRequest</class>
+  <method>read</method>
+  <thread>41</thread>
+  <message>java.net.SocketInputStream@6a0d8573</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:40</date>
+  <millis>1351454260276</millis>
+  <sequence>106</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>server.Server</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>Socket[addr=/0:0:0:0:0:0:0:1,port=63502,localport=8080]</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:40</date>
+  <millis>1351454260276</millis>
+  <sequence>107</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>server.Server</class>
+  <method>run</method>
+  <thread>18</thread>
+  <message>Starting tread for: server.ConnectionHandler@1db4776a</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:40</date>
+  <millis>1351454260282</millis>
+  <sequence>108</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpResponseFactory</class>
+  <method>create200OK</method>
+  <thread>41</thread>
+  <message>Close</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:40</date>
+  <millis>1351454260283</millis>
+  <sequence>109</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpRequest</class>
+  <method>read</method>
+  <thread>42</thread>
+  <message>java.net.SocketInputStream@5076b51c</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:40</date>
+  <millis>1351454260286</millis>
+  <sequence>110</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpResponse</class>
+  <method>write</method>
+  <thread>41</thread>
+  <message>java.net.SocketOutputStream@216c6a89</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:40</date>
+  <millis>1351454260359</millis>
+  <sequence>111</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpResponseFactory</class>
+  <method>create404NotFound</method>
+  <thread>42</thread>
+  <message>Close</message>
+</record>
+<record>
+  <date>2012-10-28T15:57:40</date>
+  <millis>1351454260360</millis>
+  <sequence>112</sequence>
+  <logger>server.Server</logger>
+  <level>INFO</level>
+  <class>protocol.HttpResponse</class>
+  <method>write</method>
+  <thread>42</thread>
+  <message>java.net.SocketOutputStream@2a1ed2f0</message>
 </record>
 </log>

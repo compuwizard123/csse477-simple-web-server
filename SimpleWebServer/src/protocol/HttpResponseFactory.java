@@ -66,7 +66,7 @@ public class HttpResponseFactory {
 	 * @return A {@link HttpResponse} object represent 200 status.
 	 */
 	public static HttpResponse create200OK(File file, String connection) {
-		Server.logger.info(connection);
+		Server.logger.info(connection + "\n");
 		HttpResponse response = new HttpResponse(Protocol.VERSION, Protocol.OK_CODE, 
 				Protocol.OK_TEXT, new HashMap<String, String>(), file);
 		
@@ -102,7 +102,7 @@ public class HttpResponseFactory {
 	 * @return A {@link HttpResponse} object represent 400 status.
 	 */
 	public static HttpResponse create400BadRequest(String connection) {
-		Server.logger.info(connection);
+		Server.logger.info(connection + "\n");
 		HttpResponse response = new HttpResponse(Protocol.VERSION, Protocol.BAD_REQUEST_CODE, 
 				Protocol.BAD_REQUEST_TEXT, new HashMap<String, String>(), null);
 		
@@ -119,7 +119,7 @@ public class HttpResponseFactory {
 	 * @return A {@link HttpResponse} object represent 404 status.
 	 */
 	public static HttpResponse create404NotFound(String connection) {
-		Server.logger.info(connection);
+		Server.logger.info(connection + "\n");
 		HttpResponse response = new HttpResponse(Protocol.VERSION, Protocol.NOT_FOUND_CODE, 
 				Protocol.NOT_FOUND_TEXT, new HashMap<String, String>(), null);
 		
@@ -146,7 +146,7 @@ public class HttpResponseFactory {
 	 * @return A {@link HttpResponse} object represent 505 status.
 	 */
 	public static HttpResponse create505NotSupported(String connection) {
-		Server.logger.info(connection);
+		Server.logger.info(connection + "\n");
 		HttpResponse response = new HttpResponse(Protocol.VERSION, Protocol.NOT_SUPPORTED_CODE, 
 				Protocol.NOT_SUPPORTED_TEXT, new HashMap<String, String>(), null);
 		
@@ -164,7 +164,7 @@ public class HttpResponseFactory {
 	 */
 	public static HttpResponse create304NotModified(String connection) {
 		// TODO fill in this method
-		Server.logger.info(connection);
+		Server.logger.info(connection + "\n");
 		return null;
 	}
 }
