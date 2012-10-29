@@ -32,6 +32,9 @@ import protocol.HttpResponseFactory;
 import protocol.Protocol;
 import protocol.ProtocolException;
 
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Map;
 import java.util.PriorityQueue;
 
 /**
@@ -156,10 +159,9 @@ public class ConnectionHandler implements Runnable {
 				if(responseTimeTooLong(start, outStream, response)){
 					return;
 				}
-//				Map<String, String> header = request.getHeader();
-//				String date = header.get("if-modified-since");
-//				String hostName = header.get("host");
-//				
+				Map<String, String> header = request.getHeader();
+				String date = header.get("if-modified-since");
+				
 				// Handling GET request here
 				// Get relative URI path from request
 				String uri = request.getUri();
@@ -187,7 +189,19 @@ public class ConnectionHandler implements Runnable {
 							if(responseTimeTooLong(start, outStream, response)){
 								return;
 							}
-							response = HttpResponseFactory.create200OK(file, Protocol.CLOSE);
+							
+							if(date != null){
+								long datetime = file.lastModified();
+				                Date modified_date = new Date(datetime);
+				                SimpleDateFormat df = new SimpleDateFormat("eee, dd mmm yyyy hh:mm:ss zzz");
+				                Date request_date = df.parse(date);
+				                if (modified_date.getTime() > request_date.getTime())
+				                	response = HttpResponseFactory.create200OK(file, Protocol.CLOSE);
+				                else
+				                	response = HttpResponseFactory.create304NotModified(Protocol.CLOSE);
+							} else {
+								response = HttpResponseFactory.create200OK(file, Protocol.CLOSE);
+							}
 						}
 						else {
 							// File does not exist so lets create 404 file not found code
@@ -213,6 +227,9 @@ public class ConnectionHandler implements Runnable {
 					response = HttpResponseFactory.create404NotFound(Protocol.CLOSE);
 				}
 			}
+			else {
+				response = HttpResponseFactory.create501NotImplemented(Protocol.CLOSE);
+			}
 		}
 		catch(Exception e) {
 			e.printStackTrace();
@@ -232,7 +249,8 @@ public class ConnectionHandler implements Runnable {
 			// Write response and we are all done so close the socket
 			response.write(outStream);
 //			System.out.println(response);
-			socket.close();
+			if(!socket.getKeepAlive())
+				socket.close();
 		}
 		catch(Exception e){
 			// We will ignore this exception
@@ -258,11 +276,10 @@ public class ConnectionHandler implements Runnable {
 			response = HttpResponseFactory.create408RequestTimedOut(Protocol.CLOSE);
 			try {
 				response.write(outStream);
-				socket.close();
-//				System.out.println(response);
+				if(!socket.getKeepAlive())
+					socket.close();
 			}
 			catch(Exception e){
-				// We will ignore this exception
 				e.printStackTrace();
 			}
 			server.incrementConnections(1);
