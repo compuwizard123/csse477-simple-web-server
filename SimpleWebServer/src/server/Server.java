@@ -156,6 +156,7 @@ public class Server implements Runnable {
 				connectionSocket.setKeepAlive(true);
 				//connectionSocket.setSoTimeout(10000);
 				logger.info(connectionSocket.toString());
+				logger.info(Long.toString(System.currentTimeMillis()));
 				// Come out of the loop if the stop flag is set
 				if (this.stop)
 					break;
